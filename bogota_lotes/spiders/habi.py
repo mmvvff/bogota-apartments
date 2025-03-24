@@ -5,7 +5,7 @@ from datetime import datetime
 import json
 
 # Scrapy
-from bogota_apartments.items import ApartmentsItem
+from bogota_lotes.items import ApartmentsItem
 from scrapy.loader import ItemLoader
 import scrapy
 

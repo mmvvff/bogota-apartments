@@ -1,5 +1,5 @@
 """
-This module defines the pipelines for the bogota_apartments Scrapy project. It contains a MongoDBPipeline class that
+This module defines the pipelines for the bogota_lotes Scrapy project. It contains a MongoDBPipeline class that
 handles the processing of items and their storage in a MongoDB database.
 
 Classes:
@@ -7,7 +7,7 @@ Classes:
 """
 
 # useful for handling different item types with a single interface
-from bogota_apartments.items import ApartmentsItem
+from bogota_lotes.items import ApartmentsItem
 from scrapy.exceptions import DropItem
 from scrapy.utils.project import get_project_settings
 from datetime import datetime
