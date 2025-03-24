@@ -11,7 +11,7 @@
 - **Modificación en la Estructura de Datos**:
   - Se ha actualizado la estructura de los datos para incluir un **timeline** de precios. Ahora los apartamentos cuentan con un historial de precios para un seguimiento más detallado.
 
-  > ⚠️ **Advertencia**: Los datos del 2023 ya no están disponibles en la base de datos principal. Si necesitas acceder a los datos del 2023, puedes descargarlos [aquí](https://www.dropbox.com/scl/fi/nv1efc8me23dsa1ie0g5s/2023_bogota_apartments_processed.json?rlkey=l6cl2gsf8j2icyh5cqwkr4un5&dl=1). La estructura ha cambiado, por lo que los datos del 2023 están en este archivo y no en la nueva versión.
+  > ⚠️ **Advertencia**: Los datos del 2023 ya no están disponibles en la base de datos principal. Si necesitas acceder a los datos del 2023, puedes descargarlos [aquí](https://www.dropbox.com/scl/fi/nv1efc8me23dsa1ie0g5s/2023_bogota_lotes_processed.json?rlkey=l6cl2gsf8j2icyh5cqwkr4un5&dl=1). La estructura ha cambiado, por lo que los datos del 2023 están en este archivo y no en la nueva versión.
 
 - **Optimización en la Extracción de Datos**:
   - Se abandonó el uso de Selenium en conjunto con Scrapy para la extracción de datos de los apartamentos. Ahora se implementa Scrapy junto con scrapy-splash para mejorar la velocidad y eficiencia en la obtención de información desde la página web de **Metrocuadrado**.
@@ -73,7 +73,7 @@ Estos cambios han sido implementados para mejorar la eficiencia, calidad y consi
 
 - Se agrego datos de los apartamentos de la pagina web **[habi](https://habi.co)**
 
-- El archivo `builker.scrapy_bogota_apartemnts.json` de la carpeta `data/raw/` ahora se almacenara en dropbox para que los datos sean accesibles desde cualquier lugar. ya que es muy pesado para almacenarlo en github. [https://www.dropbox.com/s/1ly47276dnqqdzp/builker.scrapy_bogota_apartments.json?dl=1](https://www.dropbox.com/s/1ly47276dnqqdzp/builker.scrapy_bogota_apartments.json?dl=1)
+- El archivo `builker.scrapy_bogota_apartemnts.json` de la carpeta `data/raw/` ahora se almacenara en dropbox para que los datos sean accesibles desde cualquier lugar. ya que es muy pesado para almacenarlo en github. [https://www.dropbox.com/s/1ly47276dnqqdzp/builker.scrapy_bogota_lotes.json?dl=1](https://www.dropbox.com/s/1ly47276dnqqdzp/builker.scrapy_bogota_lotes.json?dl=1)
 
 > ⚠️ Es importante destacar que durante el proceso de web scraping se respetaron las políticas y condiciones de uso establecidas por cada sitio web.
 

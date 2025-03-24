@@ -44,7 +44,7 @@ Descargar ultimos datos: [https://github.com/builker-col/bogota-apartments/relea
     - [Imágenes](data/processed/images.csv)
 - [Datos RAW](data/raw/)
     - [Readme de Datos RAW](data/raw/README.md)
-    - [Apartamentos](https://www.dropbox.com/s/1ly47276dnqqdzp/builker.scrapy_bogota_apartments.json?dl=1)
+    - [Apartamentos](https://www.dropbox.com/s/1ly47276dnqqdzp/builker.scrapy_bogota_lotes.json?dl=1)
 
 From **Bogota** co to the world 🌎
 
@@ -65,8 +65,8 @@ Si quieres ejecutar el proyecto con los servicios de mongoDB debes crear un arch
 ```bash
 MONGO_URI=<<URI de conexión a MongoDB>>
 MONGO_DATABASE=<<Nombre de la base de datos en MongoDB>>
-MONGO_COLLECTION_RAW = 'scrapy_bogota_apartments' # Nombre de la colección donde se guardaran los datos RAW
-MONGO_COLLECTION_PROCESSED = 'scrapy_bogota_apartments_processed' # Nombre de la colección donde se guardaran los datos procesados
+MONGO_COLLECTION_RAW = 'scrapy_bogota_lotes' # Nombre de la colección donde se guardaran los datos RAW
+MONGO_COLLECTION_PROCESSED = 'scrapy_bogota_lotes_processed' # Nombre de la colección donde se guardaran los datos procesados
 ```
 
 ### Quitar Configuración de mongoDB
@@ -80,7 +80,7 @@ Si prefieres no utilizar MongoDB, puedes comentar las siguientes líneas de cód
 
 ```python
 #ITEM_PIPELINES = {
-#    'bogota_apartments.pipelines.MongoDBPipeline': 500
+#    'bogota_lotes.pipelines.MongoDBPipeline': 500
 #}
 ```
 
@@ -113,7 +113,7 @@ Se implemento un scraper creado con la librería [Scrapy](https://scrapy.org/) y
 
 <!-- ### Raw Data -->
 
-<!-- Para poder haceder a los datos RAW puede ejecutar el script `download_raw_data.py` en la ruta `data/raw/` o puede descargar los datos desde el siguiente enlace [https://www.dropbox.com/scl/fi/63rkv8ehjcqogptpn06gp/builker.scrapy_bogota_apartmentsV1.3.0_october_1_2023.json?rlkey=wvwpyu3buy0ii84wxayywz8ot&dl=1](https://www.dropbox.com/scl/fi/63rkv8ehjcqogptpn06gp/builker.scrapy_bogota_apartmentsV1.3.0_october_1_2023.json?rlkey=wvwpyu3buy0ii84wxayywz8ot&dl=1) -->
+<!-- Para poder haceder a los datos RAW puede ejecutar el script `download_raw_data.py` en la ruta `data/raw/` o puede descargar los datos desde el siguiente enlace [https://www.dropbox.com/scl/fi/63rkv8ehjcqogptpn06gp/builker.scrapy_bogota_lotesV1.3.0_october_1_2023.json?rlkey=wvwpyu3buy0ii84wxayywz8ot&dl=1](https://www.dropbox.com/scl/fi/63rkv8ehjcqogptpn06gp/builker.scrapy_bogota_lotesV1.3.0_october_1_2023.json?rlkey=wvwpyu3buy0ii84wxayywz8ot&dl=1) -->
 
 ### Apartamentos
 
@@ -181,7 +181,7 @@ file: [images.csv](data/processed/images.csv)
 | url_imagen   | Enlace URL de la imagen asociada al apartamento. | -->
 
 ### Datos del 2023
-Con la **versión 2.0.0**, se realizó una actualización crucial en la estructura de datos, lo que conllevó a la eliminación de los datos anteriores a 2024 de nuestra base de datos. Si necesitas acceder a esta información del 2023, puedes descargarla desde la siguiente URL: [https://www.dropbox.com/scl/fi/nv1efc8me23dsa1ie0g5s/2023_bogota_apartments_processed.json?rlkey=l6cl2gsf8j2icyh5cqwkr4un5&dl=1](https://www.dropbox.com/scl/fi/nv1efc8me23dsa1ie0g5s/2023_bogota_apartments_processed.json?rlkey=l6cl2gsf8j2icyh5cqwkr4un5&dl=1)
+Con la **versión 2.0.0**, se realizó una actualización crucial en la estructura de datos, lo que conllevó a la eliminación de los datos anteriores a 2024 de nuestra base de datos. Si necesitas acceder a esta información del 2023, puedes descargarla desde la siguiente URL: [https://www.dropbox.com/scl/fi/nv1efc8me23dsa1ie0g5s/2023_bogota_lotes_processed.json?rlkey=l6cl2gsf8j2icyh5cqwkr4un5&dl=1](https://www.dropbox.com/scl/fi/nv1efc8me23dsa1ie0g5s/2023_bogota_lotes_processed.json?rlkey=l6cl2gsf8j2icyh5cqwkr4un5&dl=1)
 
 Esta actualización asegura una estructura más optimizada y acorde con las necesidades actuales de los datos, por lo que te invitamos a obtener los datos actualizados del 2024 y posteriores para aprovechar al máximo nuestras últimas mejoras.
 
